@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart health condition</title>
+    <style>
+        style type="text/css">
+    title{
+        text-align: right;
+    }
+    lable{
+        width: 150px;
+        display: inline-block;
+        text-align: right;
+        margin: auto;
+        justify-content: center;
+    }
+</style>
+<body style="background-image: url(https://previews.123rf.com/images/spukkato/spukkato2103/spukkato210300023/165027175-top-view-of-healthy-food-in-plate-with-stethoscope-and-red-heart-for-cholesterol-diet-and-diabetes-c.jpg);    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;" >
+
+    <h1> Daibetes Condition </h1>
+    <form methods="GET" action="/predict_daibetes"> 
+
+        <label>Glucose:</label>
+        <input type = "text" name = "Glucose">
+        </select>
+
+        <br>
+        <br>
+
+        <label>BloodPressure:</label>
+        <input type = "text" name = "BloodPressure">
+        </select>
+
+        <br>
+        <br>
+
+        <label>SkinThickness:</label>
+        <input type = "text" name = "SkinThickness">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Insulin:</label>
+        <input type = "text" name = "Insulin">
+        </select>
+
+        <br>
+        <br>
+
+        <label>BMI:</label>
+        <input type = "text" name = "BMI">
+        </select>
+
+        <br>
+        <br>
+
+        <label>DiabetesPedigreeFunction:</label>
+        <input type = "text" name = "DiabetesPedigreeFunction">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" style="margin-left: 250px; font-size: 18px;" value="SUBMIT">
+        <br>
+
+        <p>heart health is <b> {{ prediction }} </b>-</p>
+    
+
+    </form>
+
+
+</body>
+</html>
